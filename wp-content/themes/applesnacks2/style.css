@@ -1,0 +1,338 @@
+/*
+Theme Name: AppleSnacks 2.0
+Description: A simple 3 column Index with 1 column Pages & Single Posts for Apple Snacks Magazine.
+Version: 1.0
+Author: Kelley Kavanaugh
+Tags: one-columns, fixed-width,
+*/
+
+*  {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #FFF;
+	font: normal 12px Verdana, Geneva, sans-serif;
+	text-align: justify;
+	letter-spacing: 1px;
+	color: #5c5c5c;
+}
+a {
+	color: #000;
+	text-decoration: none;
+}
+a:hover {
+	border-bottom: 1px dashed #999;
+}
+p {
+	letter-spacing: 1px;
+	line-height: 20px;
+	padding: 5px 0px;
+}
+abbr {
+	border-bottom: 1px dotted #999;
+	cursor: help;
+}
+acronym {
+	border-bottom: 1px dashed #999;
+	cursor: help;
+}
+blockquote {
+	padding: 20px 50px;
+	font: italic 14px Georgia, "Times New Roman", Times, serif;
+	min-height: 70px;
+	line-height: 18px;
+	clear: both;
+}
+li {
+	list-style: none;
+	margin: 10px 0 0 0px;
+}
+.read-more {
+	float: right;
+}
+img {
+	margin: 0px 0 0px 0;
+}
+
+/* Typography */
+h1 {
+	color: #000;
+	font: bold 30px Georgia, "Times New Roman", Times, serif;
+	line-height: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+}
+h2 {
+	color: #000;
+	font: bold 25px Georgia, "Times New Roman", Times, serif;
+	line-height: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+}
+h3 {
+	color: #000;
+	font: bold 20px Georgia, "Times New Roman", Times, serif;
+	line-height: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+}
+h4 {
+	color: #000;
+	font: bold 15px Georgia, "Times New Roman", Times, serif;
+	line-height: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+}
+h5, h6 {
+	color: #000;
+	font: bold 12px Georgia, "Times New Roman", Times, serif;
+	line-height: 1.5em;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+/* End Typography */
+
+/* Header */
+#outer {
+	background-color: #FFF;
+	width: 1016px;
+	margin: 0px auto;
+	text-align: left;
+	padding: 50px 0px 0px 0px;
+}
+#container {
+	border: 0px solid #eaeaea;
+	margin: 0px 0 0 0;
+	width: 980px;
+}
+#header {
+	background: url(images/header-banner.jpg);
+	margin: 0px 0 0 0;
+	height: 0px;
+	width: 0px;
+}
+#menu-bar {
+	background: url(images/logo-tiny.jpg) no-repeat;
+	background-color: #FFF;
+	position: fixed;
+	margin: 0 0 0 0px;
+	padding: 0 0 0 50px;
+	height: 50px;
+	width: 100%;
+	clear: both;
+}
+ul.nav {
+	height: 40px;
+	border-bottom: 0px solid #eaeaea;
+	list-style: none;
+}
+ul.nav li {
+	float: left;
+	display: block;
+	text-transform: uppercase;
+	line-height: 38px;
+	border-right: 0px solid #eaeaea;
+	padding: 1px;
+}
+ul.nav li a {
+	display: block;
+	float: left;
+	text-decoration: none;
+	padding: 0 10px;
+	border: none;
+}
+ul.nav li a:hover, ul.nav li a.active {
+	background: #c51300;
+	color: #fff;
+	border-bottom: none;
+}
+ul.nav li a.active {
+	background: #000;
+	color: #fff;
+	border-bottom: none;
+}
+#tagline {
+	font-style: italic;
+	padding: 20px 50px 0 0px;
+	color: #c51300;
+	text-align: right;
+}
+/* END Header */
+
+/* Main Index Posts */
+#box-in {
+	width: 300px;
+	float: left;
+	margin: 10px 0 0 15px;
+	height: 375px;
+	clear: right;
+}
+#category {
+	background-color: #000;
+	display: block;
+	text-transform: uppercase;
+	color: #FFF;
+	font: italic 10px Georgia, "Times New Roman", Times, serif;
+	text-align: left;
+	padding: 10px 10px 10px 10px;
+}
+#category a {
+	color: #FFF;
+}
+#title {
+	font: bold 20px Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px 0px 5px;
+	clear: both;
+}
+#author {
+	font: italic 9px Georgia, "Times New Roman", Times, serif;
+	text-align: right;
+	padding: 0px 0px 0px 0px;
+}
+#excerpt {
+	text-align: justify;
+	padding: 0 10px 0 10px;
+}
+/* END MAIN INDEX POSTS */
+
+/* Single Posts */
+#single {
+	padding: 0 300px 0 300px;
+	height: 100%;
+	text-align: justify;
+}
+#single-title {
+	color: #000;
+	font: bold 25px Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px 0px 5px;
+}
+#author-title {
+	color: #000;
+	font: bold 25px Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px 0px 5px;
+	clear: both;
+	border-top: 1px dashed #000;
+}
+#cat-description {
+	padding: 0 200px 0 200px;
+	font-style: italic;
+}
+/* END Single Posts */
+
+/* Normal Stuff */
+.wp-caption {
+	background: #efefef;
+	text-align: center;
+	font-style: italic;
+	float: left;
+}
+.alignleft {
+	float: left;
+	margin-right: 10px;
+}
+.alignright {
+	float: right;
+	margin-left: 10px;
+}
+.aligncenter {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+.alignnone {
+	clear: both;
+	float: none;
+}
+
+/* Navigation */
+.navigation {
+	clear:both;
+	text-align: center;
+}
+.navigation .alignright, .navigation .alignleft {
+	padding: 20px 0;
+}
+.navigation a  {
+	border-bottom: none;
+}
+.navigation-post {
+	padding: 25px 10px 25px 10px;
+}
+.navigation-post a {
+	font-weight: bold;
+}
+/* End Navigation */
+
+/* Columns Page */
+#columns li {
+	list-style: none;
+	font: normal 20px Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	margin: 10px;
+}
+/* Contributors Page */
+#userphoto {
+	text-align: left;
+	margin: 0 30px 30px;
+	float: left;
+}
+
+#authorlist li {
+	width: 800px;
+	margin: 20px 0px 0px 50px;
+	padding: 0 0 20px 0;
+	list-style: none;
+	font-size: 14px;
+	border-bottom: 1px dashed;
+	line-height: 1.5em;
+	text-decoration: none;
+}
+#authorlist img.photo {
+	width: 100px;
+	height: 100px;
+	float: left;
+	padding: 0 20px 10px 0;
+	text-decoration: none;
+}
+.authorlist {
+	font: bold 20px Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px 0px 5px;
+	text-decoration: none;
+}
+.authorlist a {
+	text-decoration: none;
+}
+.authorlist a:hover {
+	text-decoration: none;
+}
+/* End Contributors Page */
+
+/* Footer */
+
+.footer {
+	background: #fff url(images/wp.gif) no-repeat top left;
+	border-top: 1px solid #eaeaea;
+	padding: 0 30px 0 30px;
+	height: 60px;
+	line-height: 60px;
+	clear: both;
+}
+.footer a {
+	text-decoration: none;
+}
+.footer .copyright {
+	width: 500px;
+	float: right;
+	text-align: right;
+}
+/* END Footer */
