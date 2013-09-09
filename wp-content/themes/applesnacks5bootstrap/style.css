@@ -20,8 +20,6 @@ body {
 #header-date {
 	font: bold 20px Georgia, "Times New Roman", Times, serif;
 	text-align: center;
-	padding: 5px 0px 5px;
-	clear: both;
 }
 #category {
 	background-color: #000;
