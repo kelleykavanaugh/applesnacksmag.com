@@ -1,8 +1,11 @@
+      <hr>
 
       <footer>
-        <p>&copy; Apple Snacks Magazine - 2013</p>
+        <p>&copy; Company 2012</p>
       </footer>
-    </div><!--/.fluid-container-->
+
+    </div> <!-- /container -->
+        <?php wp_footer(); ?>
 
     <!-- Le javascript
     ================================================== -->
@@ -20,8 +23,6 @@
     <script src="../assets/js/bootstrap-collapse.js"></script>
     <script src="../assets/js/bootstrap-carousel.js"></script>
     <script src="../assets/js/bootstrap-typeahead.js"></script>
-
-<?php wp_footer();?>
 
   </body>
 </html>
