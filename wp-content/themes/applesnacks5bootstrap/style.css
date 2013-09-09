@@ -16,3 +16,33 @@ body {
      padding-top: 60px; 
      padding-bottom: 40px; 
 }
+/* Main Index Posts */
+#header-date {
+	font: bold 20px Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	padding: 5px 0px 5px;
+	clear: both;
+}
+#category {
+	background-color: #000;
+	display: block;
+	text-transform: uppercase;
+	color: #FFF;
+	font: italic 10px Georgia, "Times New Roman", Times, serif;
+	text-align: left;
+	padding: 10px 10px 10px 10px;
+}
+#category a {
+	color: #FFF;
+	text-decoration: none;
+}
+#category a:hover {
+	color: #c51300;
+	text-decoration: none;
+}
+[class*="span"] {
+  float: left;
+  min-height: 1px;
+  margin-left: 10px;
+}
+/* END MAIN INDEX POSTS */

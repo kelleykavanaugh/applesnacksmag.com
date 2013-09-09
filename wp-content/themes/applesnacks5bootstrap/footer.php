@@ -1,7 +1,8 @@
+</div>
       <hr>
 
       <footer>
-        <p>&copy; Company 2012</p>
+        <p>&copy; 2013 <strong><?php bloginfo('name'); ?></strong></p>
       </footer>
 
     </div> <!-- /container -->
