@@ -1,29 +1,28 @@
 <?php get_header(); ?>
 
-      <!-- Main hero unit for a primary marketing message or call to action -->
-      <div class="hero-unit">
-        <h1>Hello, world!</h1>
-        <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
-        <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
-      </div>
-
-      <!-- Example row of columns -->
-      <div class="row">
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec id elit non mi porta gravida at eget metus. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus. Etiam porta sem malesuada magna mollis euismod. Donec sed odio dui. </p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-       </div>
-        <div class="span4">
-          <h2>Heading</h2>
-          <p>Donec sed odio dui. Cras justo odio, dapibus ac facilisis in, egestas eget quam. Vestibulum id ligula porta felis euismod semper. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
-          <p><a class="btn" href="#">View details &raquo;</a></p>
-        </div>
-      </div>
+<!-- Main hero unit for a primary marketing message or call to action -->
+<div class="hero-unit">
+  <h1>Friday, <?php echo get_the_date(); ?></h1>
+</div>
+<!-- Start The Loop -->
+<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+  <!-- Example row of columns -->
+  <div class="row">
+    <div class="span4">
+      <!-- Category -->
+      <h2><?php $category = get_the_category(); if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>'; } ?></h2>
+      <!-- End Category-->
+      <!-- Title -->
+      <h2><a href="<?php the_permalink() ?>" rel="bookmark" title="Read <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h2>
+      <!-- End Title -->
+      <!-- Excerpt -->
+      <p><?php the_excerpt() ?></p>
+      <!-- End Excerpt -->
+    </div><!--end span4 -->
+  </div><!-- end row -->
+<!-- End The Loop -->
+<?php endwhile; else: ?>
+  <p>Sorry, no posts matched your criteria.</p>
+<?php endif; ?>
 
 <?php get_footer(); ?>
