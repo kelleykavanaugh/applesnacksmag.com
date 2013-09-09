@@ -39,8 +39,6 @@ body {
 	text-decoration: none;
 }
 [class*="span"] {
-  float: left;
-  min-height: 1px;
   margin-left: 10px;
   border: 1px solid;
 }
