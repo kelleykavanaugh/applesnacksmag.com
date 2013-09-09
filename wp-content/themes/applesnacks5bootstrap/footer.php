@@ -1,6 +1,6 @@
 
       <footer>
-        <p>&copy; Company 2013</p>
+        <p>&copy; Apple Snacks Magazine - 2013</p>
       </footer>
 
     </div><!--/.fluid-container-->
