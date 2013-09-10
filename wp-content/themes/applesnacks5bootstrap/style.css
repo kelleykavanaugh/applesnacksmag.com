@@ -41,5 +41,6 @@ body {
 [class*="span"] {
   margin-left: 10px;
   border: 1px solid;
+  min-height: 390px;
 }
 /* END MAIN INDEX POSTS */

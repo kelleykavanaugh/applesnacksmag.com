@@ -2,7 +2,7 @@
 <h2><center>Friday, <?php echo get_the_date(); ?></h2></center>
   <div id="content">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?><!-- Start The Loop -->
-    <div class="span4">
+      <div class="span4">
       <div id="category">
         <?php $category = get_the_category(); if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>'; } ?>
       </div><!-- End Category-->
