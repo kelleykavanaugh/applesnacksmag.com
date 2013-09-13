@@ -26,6 +26,16 @@
         <p>Sorry, no posts matched your criteria.</p>
         <?php endif; ?>
         <!-- End The Loop -->
+        <table class="table">
+          <tr>
+            <td>
+              <p class="text-left"><small><em><?php previous_posts_link('&raquo; Newer Snacks') ?></em></small></p>
+            </td>
+            <td>
+              <p class="text-right"><small><em><?php next_posts_link('Older Snacks &laquo;') ?></small></em></p>
+            </td>
+          </tr>
+        </table>
       </div><!-- /.span6-->
       <div id="span3">
       </div><!--/.span3 -->
