@@ -1,10 +1,20 @@
     <?php get_header(); ?>
     <div class="row-fluid">
-      <div class="span12">
-    <!-- Start the Loop -->
-      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-      <?php the_content() ?>
-      <p class="text-right"><small><em>By: <?php the_author_posts_link() ?></em></small></p>
+      <div class="span2">
+      </div>
+      <div class="span8">
+      <!-- Start the Loop -->
+        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <?php the_content() ?>
+        <p class="text-right"><small><em>By: <?php the_author_posts_link() ?></em></small></p>
+      </div><!--/.span12 -->
+      <div class="span2">
+      </div>
+    </div><!--/.row-fluid -->
+    <div class="row-fluid">
+      <div class="span3">
+      </div>
+      <div class="span6">
       <h1><?php the_title(); ?></h1>
 <?php $categories = get_categories();
 foreach ($categories as $cat) {
@@ -24,6 +34,8 @@ foreach ($categories as $cat) {
         <p>Sorry, no posts matched your criteria.</p>
         <?php endif; ?>
     <!-- End The Loop -->
-      </div><!-- /.span12-->
+      </div><!-- /.span6-->
+      <div id="span3">
+      </div><!--/.span3 -->
     </div><!-- /.row-fluid -->
     <?php get_footer(); ?>
