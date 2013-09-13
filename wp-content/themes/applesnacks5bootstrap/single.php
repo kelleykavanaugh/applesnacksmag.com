@@ -5,21 +5,14 @@
       <div class="span8">
         <!-- Start the Loop -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <h1><center><?php the_title(); ?></center></h1>
-        <table class="table">
-          <tr>
-            <td>
-              <p class="text-left"><small><em></small></em></p>
-            </td>
-            <td>
-              <p class="text-right"><small><em>
-                By: <?php the_author_posts_link() ?><br>
-                <?php the_time('F jS, Y') ?><br>
-                Column: <?php $category = get_the_category(); if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>'; } ?>
-              </em></small></p>
-            </td>
-          </tr>
-        </table>
+        <h1><?php the_title(); ?></h1>
+        <!--text-right-->
+        <p class="text-right"><small><em>
+          By: <?php the_author_posts_link() ?><br>
+          Column: <?php $category = get_the_category(); if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>'; } ?><br>
+          <?php the_time('F jS, Y') ?>
+        </em></small></p>
+        <!--/text-right-->
           <?php the_content() ?>
         <?php endwhile; else: ?>
         <p>Sorry, no posts matched your criteria.</p>

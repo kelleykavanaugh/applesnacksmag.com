@@ -5,7 +5,7 @@
       <div class="span8">
         <!-- Start the Loop -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <h1><center><?php the_title(); ?></center></h1>
+        <h1><?php the_title(); ?></h1>
           <?php the_content() ?>
         <?php endwhile; else: ?>
         <p>Sorry, no posts matched your criteria.</p>
