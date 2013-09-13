@@ -5,7 +5,9 @@
       <div class="span8">
         <!-- This sets the $curauth variable -->
         <?php $curauth = (isset($_GET['display_name'])) ? get_user_by('slug', $author_name) : get_userdata(intval($author)); ?>
-        <h1><?php echo $curauth->first_name; ?> <?php echo $curauth->last_name; ?></h1>
+        <div id="border-bottom">
+          <h1><?php echo $curauth->first_name; ?> <?php echo $curauth->last_name; ?></h1>
+        </div><!--/border-bottom-->
         <div class="pull-left">
           <?php userphoto($wp_query->get_queried_object()) ?>
         </div><!--/pull-left-->

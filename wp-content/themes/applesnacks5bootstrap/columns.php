@@ -7,7 +7,9 @@
       <div class="span8">
         <!-- Start the Loop -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <h1><center><?php the_title(); ?></center></h1>
+        <div id="border-bottom">
+          <h1><?php the_title(); ?></h1>
+        </div><!--/border-bottom-->
           <small><em><?php the_content() ?></em></small>
         <!-- PHP for category pulls -->
         <?php $categories = get_categories();
