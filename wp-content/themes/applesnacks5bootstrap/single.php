@@ -9,11 +9,14 @@
         <table class="table">
           <tr>
             <td>
-              <p class="text-left"><small><em>From Column: <?php $category = get_the_category(); if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>'; } ?></small></em></p>
+              <p class="text-left"><small><em></small></em></p>
             </td>
             <td>
-              <p class="text-right"><small><em>By: <?php the_author_posts_link() ?><br>
-              <?php the_time('F jS, Y') ?></em></small></p>
+              <p class="text-right"><small><em>
+                By: <?php the_author_posts_link() ?><br>
+                <?php the_time('F jS, Y') ?><br>
+                Column: <?php $category = get_the_category(); if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>'; } ?>
+              </em></small></p>
             </td>
           </tr>
         </table>
