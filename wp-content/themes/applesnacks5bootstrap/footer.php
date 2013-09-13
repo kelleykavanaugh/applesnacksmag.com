@@ -1,7 +1,7 @@
         <hr><!--Style Break-->
         <footer>
-            <p class="text-right"><em>Website <strong><a href="http://www.kelleykavanaugh.com">Kelley Kavanaugh </a></strong></em>
-            // <em>Logo <strong><a href="http://www.facebook.com/connorpascal">Connor Pascal</a></strong></em>
+            <p class="text-right"><em>Website by <strong><a href="http://www.kelleykavanaugh.com">Kelley Kavanaugh </a></strong></em>
+            // <em>Logo by <strong><a href="http://www.facebook.com/connorpascal">Connor Pascal</a></strong></em>
             // &copy; 2013 <strong><?php bloginfo('name'); ?></strong>
             </p>
         </footer>
