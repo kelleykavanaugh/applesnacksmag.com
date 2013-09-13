@@ -3,12 +3,12 @@
       <div class="span3">
       </div>
       <div class="span6">
-                        <div id="border-bottom">
-        <h1>Recently Posted Snacks</h1>
-                    </div><!--/border-bottom-->
-      <!-- Start the Loop -->
+        <div id="border-bottom">
+          <h1>Recently Posted Snacks</h1>
+        </div><!--/border-bottom-->
+        <!-- Start the Loop -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-      <h3><center><?php the_title(); ?></center></h3>
+        <h3><center><?php the_title(); ?></center></h3>
         <table class="table">
           <tr>
             <td>
@@ -19,14 +19,13 @@
             </td>
           </tr>
         </table>
-                <div id="border-bottom">
-                <?php the_excerpt() ?>
-                    </div><!--/border-bottom-->
+        <div id="border-bottom">
+          <?php the_excerpt() ?>
+        </div><!--/border-bottom-->
         <?php endwhile; else: ?>
         <p>Sorry, no posts matched your criteria.</p>
         <?php endif; ?>
-      <!-- End The Loop -->
-
+        <!-- End The Loop -->
       </div><!-- /.span6-->
       <div id="span3">
       </div><!--/.span3 -->
