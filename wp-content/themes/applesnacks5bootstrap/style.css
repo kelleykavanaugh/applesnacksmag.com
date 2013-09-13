@@ -12,9 +12,9 @@ This simple theme was built by modifying the example Bootstrap theme "Basic Mark
 
 @import url('bootstrap/css/bootstrap.css'); 
 @import url('bootstrap/css/bootstrap-responsive.css'); 
-body { 
-     padding-top: 60px; 
-     padding-bottom: 40px; 
+body {
+	padding-top: 20px; 
+	padding-bottom: 0px; 
 }
 /* Main Index Posts */
 #border-bottom {

@@ -4,7 +4,7 @@
       </div>
       <div class="span6">
         <div id="border-bottom">
-          <h1>Recently Posted Snacks</h1>
+          <h1><center><?php the_title(); ?></center></h1>
         </div><!--/border-bottom-->
         <!-- Start the Loop -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
