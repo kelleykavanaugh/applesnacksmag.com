@@ -1,0 +1,206 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/kelleykavanaugh/Sites/itsyourfuneralpodcast.com/itsyourfuneralpodcast/sidebar.php",
+		"/Users/kelleykavanaugh/Sites/itsyourfuneralpodcast.com/itsyourfuneralpodcast/functions.php",
+		"/Users/kelleykavanaugh/Sites/itsyourfuneralpodcast.com/itsyourfuneralpodcast/footer.php",
+		"/Users/kelleykavanaugh/Sites/itsyourfuneralpodcast.com/itsyourfuneralpodcast/style.css",
+		"/Users/kelleykavanaugh/Sites/itsyourfuneralpodcast.com/itsyourfuneralpodcast/header.php",
+		"/Users/kelleykavanaugh/Sites/itsyourfuneralpodcast.com/itsyourfuneralpodcast/index.php",
+		"/Users/kelleykavanaugh/Sites/itsyourfuneralpodcast.com/itsyourfuneralpodcastproject",
+		"/Users/kelleykavanaugh/Downloads/wordpress/wp-config-sample.php",
+		"/Users/kelleykavanaugh/Sites/applesnacksmag.com/wp-content/themes/applesnacks5bootstrap/index.php",
+		"/Users/kelleykavanaugh/Sites/applesnacksmag.com/wp-content/themes/applesnacks5bootstrap/style.css",
+		"/Users/kelleykavanaugh/Sites/applesnacksmag.com/wp-content/themes/applesnacks5bootstrap/footer.php",
+		"/Users/kelleykavanaugh/Sites/applesnacksmag.com/wp-content/themes/applesnacks3/style.css",
+		"/Users/kelleykavanaugh/Sites/applesnacksmag.com/wp-content/themes/applesnacks3/index.php",
+		"/Users/kelleykavanaugh/Sites/applesnacksmag.com/wp-content/themes/applesnacks5bootstrap/header.php",
+		"/Users/kelleykavanaugh/Sites/applesnacksmag.com/wp-content/themes/applesnacks5bootstrap/sidebar.php",
+		"/Users/kelleykavanaugh/Sites/applesnacksmag.com/wp-content/themes/applesnacks5bootstrap/functions.php",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tennis-rx/css/style.css",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tennis-rx/team.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tennis-rx/product/rudy-project-rydon.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tennis-rx/product/Rudy-Project-Ketyum.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tennis-rx/product/rudy-project-ekynox-sx.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tennis-rx/product/oakley-split-jacket.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tennis-rx/product/oakley-jupiter-squared.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tennis-rx/product/oakley-fast-jacket.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tennis-rx/product/numa-optics-chisel.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tennis-rx/lenses.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tennis-rx/frames.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tennis-rx/faq.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tennis-rx/contact.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tennis-rx/index.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/faq.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/randolph-sporter.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/randolph-edge.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/smith-elite-prospect.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/numa-optics-chisel.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/numa-optics-chuck.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/numa-optics-point.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/randolph-concorde.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/randolph-sportsman.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/rudy-project-rydon.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/smith-elite-chamber.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/smith-elite-director.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/smith-elite-hideout.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/smith-elite-hudson.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/spy-optics-bounty.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/spy-optics-quanta.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/product/wiley-romer.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/lenses.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/marking.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/team.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/frames.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/index.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/contact.html",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/css/style.less",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/css/pages/home.less",
+		"/Users/kelleykavanaugh/Projects/Eric Baer/tactical-rx/css/font-awesome/font-awesome.css",
+		"/Users/kelleykavanaugh/Sites/sushisasa.com/wp-config.php",
+		"/Users/kelleykavanaugh/Projects/Sushi Sasa/Sushi Sasa Domain Name Redirect",
+		"/Users/kelleykavanaugh/dotfiles/git/gitconfig.symlink",
+		"/Users/kelleykavanaugh/Sites/Apple Snacks/applesnacksmag/wp-content/plugins/hello.php"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"nav",
+			"container",
+			"block",
+			"category",
+			"container",
+			"exce",
+			"<!-- Le styles -->\n<link href=\"../assets/css/bootstrap.css\" rel=\"stylesheet\">\n<style type=\"text/css\">\n  body {\n    padding-top: 60px;\n    padding-bottom: 40px;\n  }\n</style>\n<link href=\"../assets/css/bootstrap-responsive.css\" rel=\"stylesheet\">",
+			"container",
+			"member",
+			"84",
+			"brand",
+			"how do I order",
+			"usa",
+			"brand"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 182.0,
+	"status_bar_visible": true
+}

@@ -13,9 +13,11 @@
     <?php endwhile; else: ?>
     <p>Sorry, no posts matched your criteria.</p>
     <?php endif; ?><!-- End the Loop -->
+  </div><!-- End "content" -->
+  <div class="span12">
     <!--Start Nav-->
     <?php previous_posts_link( 'Newer Issue' ); ?>//
     <?php next_posts_link( 'Older Issue' , $max_pages ); ?>
     <!--End Nav-->
-  </div><!-- End "content" -->
+  </div><!-- End 12 span -->
 <?php get_footer(); ?>
