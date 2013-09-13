@@ -1,23 +1,11 @@
-<?php get_header(); ?>
-
-  <div id="single">
+    <?php get_header(); ?>
+    <div class="row-fluid">
+      <div class="span12">
     <!-- Start the Loop -->
-            <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-    <!-- Content -->
-      <div id="content">
+      <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
       <?php the_content() ?>
-    <!-- End Content--></div>
-    <!--Author -->
-      <div id="author">
-        By: <?php the_author_posts_link() ?>
-    <!--End Author --></div>
-
-
-              <div id="single-title">
-      <?php the_title(); ?>
-    </div><!-- End SINGLE TITLE-->
-                <div id="columns">
-
+      <p class="text-right"><small><em>By: <?php the_author_posts_link() ?></em></small></p>
+      <h1><?php the_title(); ?></h1>
 <?php $categories = get_categories();
 foreach ($categories as $cat) {
   if ($cat->category_parent != 0) {
@@ -32,14 +20,10 @@ foreach ($categories as $cat) {
 }
 ?>
 
-
-
-
       <?php endwhile; else: ?>
         <p>Sorry, no posts matched your criteria.</p>
         <?php endif; ?>
     <!-- End The Loop -->
-
-    <!--End Columns--></div>
-</div></div>
-        <?php get_footer(); ?>
+      </div><!-- /.span12-->
+    </div><!-- /.row-fluid -->
+    <?php get_footer(); ?>
