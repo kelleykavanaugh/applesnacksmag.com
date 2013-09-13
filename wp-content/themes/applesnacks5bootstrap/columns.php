@@ -9,16 +9,8 @@ Template Name: Columns
       <div class="span8">
       <!-- Start the Loop -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <?php the_content() ?>
-        <p class="text-right"><small><em>By: <?php the_author_posts_link() ?></em></small></p>
-      </div><!--/.span12 -->
-      <div class="span2">
-      </div>
-    </div><!--/.row-fluid -->
-    <div class="row-fluid">
-      <div class="span3">
-      </div>
-      <div class="span6">
+        <small><em><?php the_content() ?>
+        <p class="text-right">-<?php the_author_posts_link() ?></em></small></p>
       <h1><center><?php the_title(); ?></center></h1>
       <!-- PHP for category pulls -->
         <?php $categories = get_categories();
@@ -38,8 +30,8 @@ Template Name: Columns
         <p>Sorry, no posts matched your criteria.</p>
         <?php endif; ?>
       <!-- End The Loop -->
-      </div><!-- /.span6-->
-      <div id="span3">
-      </div><!--/.span3 -->
+      </div><!-- /.span8-->
+      <div id="span2">
+      </div><!--/.span2 -->
     </div><!-- /.row-fluid -->
     <?php get_footer(); ?>
