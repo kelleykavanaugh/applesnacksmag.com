@@ -1,7 +1,7 @@
     <?php get_header(); ?>
     <div class="row-fluid">
       <div class="span2">
-      </div>
+      </div><!--/span2-->
       <div class="span8">
         <div id="border-bottom">
           <h1><?php the_title(); ?></h1>
