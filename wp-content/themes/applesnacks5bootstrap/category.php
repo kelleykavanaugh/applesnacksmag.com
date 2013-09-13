@@ -15,7 +15,8 @@
               <p class="text-left"><small><?php the_time('F jS, Y') ?><em></small></em></p>
             </td>
             <td>
-              <p class="text-right"><small><em>By: <?php the_author_posts_link() ?></em></small></p>
+              <p class="text-right"><small><em>By: <?php the_author_posts_link() ?><br>
+              <?php the_time('F jS, Y') ?></em></small></p>
             </td>
           </tr>
         </table>
