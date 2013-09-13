@@ -16,19 +16,20 @@
       </div>
       <div class="span6">
       <h1><?php the_title(); ?></h1>
-<?php $categories = get_categories();
-foreach ($categories as $cat) {
-  if ($cat->category_parent != 0) {
-    echo '<span style="padding-left:10px;">';
-  }
-  echo '<a href="'.get_option('home').'/'.'category'.'/'.$cat->category_nicename.'/">'.$cat->cat_name.'</a>';
-  if ($cat->category_description != '') {
-    echo ' <br> '.$cat->category_description;
-    echo ' <br> ';
-  }
-  echo '<br />';
-}
-?>
+      <!-- PHP for category pulls -->
+        <?php $categories = get_categories();
+        foreach ($categories as $cat) {
+          if ($cat->category_parent != 0) {
+            echo '<span style="padding-left:10px;">';
+          }
+          echo '<a href="'.get_option('home').'/'.'category'.'/'.$cat->category_nicename.'/">'.$cat->cat_name.'</a>';
+          if ($cat->category_description != '') {
+            echo ' <br> '.$cat->category_description;
+            echo ' <br> ';
+          }
+          echo '<br />';
+        }
+        ?>
 
       <?php endwhile; else: ?>
         <p>Sorry, no posts matched your criteria.</p>
