@@ -1,14 +1,11 @@
     <?php get_header(); ?>
     <div class="row-fluid">
-      <div class="span3">
-      </div>
-      <div class="span6">
-        <div id="border-bottom">
-          <h1><center>RECENT SNACKS</center></h1>
-        </div><!--/border-bottom-->
+      <div class="span2">
+      </div><!--/span2-->
+      <div class="span8">
         <!-- Start the Loop -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <h3><center><?php the_title(); ?></center></h3>
+        <h1><center><?php the_title(); ?></center></h1>
         <table class="table">
           <tr>
             <td>
@@ -19,9 +16,7 @@
             </td>
           </tr>
         </table>
-        <div id="border-bottom">
-          <?php the_excerpt() ?>
-        </div><!--/border-bottom-->
+          <?php the_content() ?>
         <?php endwhile; else: ?>
         <p>Sorry, no posts matched your criteria.</p>
         <?php endif; ?>
@@ -36,8 +31,8 @@
             </td>
           </tr>
         </table>
-      </div><!-- /.span6-->
-      <div id="span3">
-      </div><!--/.span3 -->
+      </div><!-- /.spa86-->
+      <div id="span2">
+      </div><!--/.span2 -->
     </div><!-- /.row-fluid -->
     <?php get_footer(); ?>
