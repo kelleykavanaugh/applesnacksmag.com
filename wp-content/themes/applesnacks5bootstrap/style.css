@@ -38,11 +38,7 @@ body {
 	color: #c51300;
 	text-decoration: none;
 }
-[class*="span"] {
-  margin-left: 10px;
-}
-content {
-	  border: 1px solid;
-  min-height: 390px;
+h1 {
+	text-transform: uppercase;
 }
 /* END MAIN INDEX POSTS */

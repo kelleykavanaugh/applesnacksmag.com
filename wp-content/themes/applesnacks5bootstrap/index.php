@@ -15,7 +15,7 @@
       <div class="span3">
       </div>
       <div class="span6">
-      <h1><?php the_title(); ?></h1>
+      <h1><center><?php the_title(); ?></center></h1>
       <!-- PHP for category pulls -->
         <?php $categories = get_categories();
         foreach ($categories as $cat) {
@@ -30,11 +30,10 @@
           echo '<br />';
         }
         ?>
-
-      <?php endwhile; else: ?>
+        <?php endwhile; else: ?>
         <p>Sorry, no posts matched your criteria.</p>
         <?php endif; ?>
-    <!-- End The Loop -->
+      <!-- End The Loop -->
       </div><!-- /.span6-->
       <div id="span3">
       </div><!--/.span3 -->
