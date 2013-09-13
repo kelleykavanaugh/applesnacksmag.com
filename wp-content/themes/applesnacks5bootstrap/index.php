@@ -8,7 +8,7 @@
         </div><!--/border-bottom-->
         <!-- Start the Loop -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <h3><center><?php the_title(); ?></center></h3>        <!--text-right-->
+        <h3><?php the_title(); ?></h3>        <!--text-right-->
         <p style="margin: 0px 0px 0px 0px;" class="text-right"><small><em>
           By: <?php the_author_posts_link() ?><br>
           Column: <?php $category = get_the_category(); if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>'; } ?><br>
