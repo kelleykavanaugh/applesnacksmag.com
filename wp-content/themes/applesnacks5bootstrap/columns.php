@@ -5,10 +5,10 @@
       <div class="span8">
         <div id="border-bottom">
           <h1><?php the_title(); ?></h1>
+          <!-- Start the Loop -->
+          <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         </div><!--/border-bottom-->
-        <!-- Start the Loop -->
           <small><em><?php the_content() ?></em></small>
-        <div id="border-bottom">
         <!-- PHP for category pulls -->
         <?php $categories = get_categories();
         foreach ($categories as $cat) {
@@ -27,7 +27,6 @@
         <p>Sorry, no posts matched your criteria.</p>
         <?php endif; ?>
         <!-- End The Loop -->
-      </div><!--/border-bottom-->
       </div><!-- /.span8-->
       <div id="span2">
       </div><!--/.span2 -->
