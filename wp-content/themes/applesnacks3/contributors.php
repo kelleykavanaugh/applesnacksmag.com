@@ -4,7 +4,7 @@ Template Name: Contributors
 */
  get_header(); ?>
 
-		<! -- Start the Loop -->
+		<!-- Start the Loop -->
         		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         		
             	<div id="single-title"><?php the_title(); ?></div>
