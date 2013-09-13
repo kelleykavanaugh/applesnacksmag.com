@@ -1,18 +1,15 @@
-<?php
-/*
-Template Name: Columns
-*/
- get_header(); ?>
+    <?php
+    /* Template Name: Columns */
+    get_header(); ?>
     <div class="row-fluid">
       <div class="span2">
-      </div>
+      </div><!--/span2-->
       <div class="span8">
-      <!-- Start the Loop -->
+        <!-- Start the Loop -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <small><em><?php the_content() ?>
-        <p class="text-right">-<?php the_author_posts_link() ?></em></small></p>
-      <h1><center><?php the_title(); ?></center></h1>
-      <!-- PHP for category pulls -->
+        <h1><center><?php the_title(); ?></center></h1>
+          <small><em><?php the_content() ?></em></small>
+        <!-- PHP for category pulls -->
         <?php $categories = get_categories();
         foreach ($categories as $cat) {
           if ($cat->category_parent != 0) {
@@ -26,11 +23,22 @@ Template Name: Columns
           echo '<br />';
         }
         ?>
+        <!--/PHP for category -->
         <?php endwhile; else: ?>
         <p>Sorry, no posts matched your criteria.</p>
         <?php endif; ?>
-      <!-- End The Loop -->
-      </div><!-- /.span8-->
+        <!-- End The Loop -->
+        <table class="table">
+          <tr>
+            <td>
+              <p class="text-left"><small><em><?php previous_posts_link('&raquo; Newer Snacks') ?></em></small></p>
+            </td>
+            <td>
+              <p class="text-right"><small><em><?php next_posts_link('Older Snacks &laquo;') ?></small></em></p>
+            </td>
+          </tr>
+        </table>
+      </div><!-- /.spa86-->
       <div id="span2">
       </div><!--/.span2 -->
     </div><!-- /.row-fluid -->
