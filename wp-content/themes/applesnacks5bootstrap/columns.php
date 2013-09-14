@@ -17,6 +17,7 @@
           echo '<h3><a href="'.get_option('home').'/'.'category'.'/'.$cat->category_nicename.'/">'.$cat->cat_name.'</a>';
           if ($cat->category_description != '') {
             echo ' : <em>'.$cat->category_description;
+            echo '<div id="border-bottom">';
             echo ' </em><br></h3> ';
           }
           echo '<br />';
