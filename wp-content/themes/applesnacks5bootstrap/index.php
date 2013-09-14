@@ -10,14 +10,10 @@
       <div id="span1">
       </div><!--/.span1 -->
     </div><!--/row-fluid-->
-
     <div class="row-fluid">
-
       <div class="span4">
-
-          <?php $posts=get_posts('numberposts=2&offset=2'); foreach ($posts as $post) : ?>
-
-
+        <!-- start the loop -->
+        <?php $posts=get_posts('numberposts=3&offset=0'); foreach ($posts as $post) : ?>
         <div id="border-bottom" class="clearfix">
         <h3><?php the_title(); ?></h3>
         <!--text-right-->
@@ -29,16 +25,45 @@
         <!--/text-right-->
         <?php the_excerpt() ?>
         </div><!--/border-bottom-->
-
-<?php endforeach; ?>
-
-      </div><!-- /.span3-->
-
-      <div class="span4">
-      </div><!-- /.span3-->
+        <?php endforeach; ?>
+        <!-- End The Loop -->
+      </div><!-- /.span4-->
 
       <div class="span4">
-      </div><!-- /.span3-->
+        <!-- start the loop -->
+        <?php $posts=get_posts('numberposts=3&offset=3'); foreach ($posts as $post) : ?>
+        <div id="border-bottom" class="clearfix">
+        <h3><?php the_title(); ?></h3>
+        <!--text-right-->
+        <p class="text-right"><small><em>
+          By: <?php the_author_posts_link() ?><br>
+          Column: <?php $category = get_the_category(); if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>'; } ?><br>
+          <?php the_time('F jS, Y') ?>
+        </em></small></p>
+        <!--/text-right-->
+        <?php the_excerpt() ?>
+        </div><!--/border-bottom-->
+        <?php endforeach; ?>
+        <!-- End The Loop -->
+      </div><!-- /.span4-->
+
+      <div class="span4">
+        <!-- start the loop -->
+        <?php $posts=get_posts('numberposts=3&offset=6'); foreach ($posts as $post) : ?>
+        <div id="border-bottom" class="clearfix">
+        <h3><?php the_title(); ?></h3>
+        <!--text-right-->
+        <p class="text-right"><small><em>
+          By: <?php the_author_posts_link() ?><br>
+          Column: <?php $category = get_the_category(); if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>'; } ?><br>
+          <?php the_time('F jS, Y') ?>
+        </em></small></p>
+        <!--/text-right-->
+        <?php the_excerpt() ?>
+        </div><!--/border-bottom-->
+        <?php endforeach; ?>
+        <!-- End The Loop -->
+      </div><!-- /.span4-->
 
     </div><!--/row-fluid-->
 
