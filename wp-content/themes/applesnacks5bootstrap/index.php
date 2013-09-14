@@ -14,10 +14,10 @@
     <div class="row-fluid">
 
       <div class="span4">
-        <!-- The Query First 3 -->
-        <?php $the_query = new WP_Query( array( 'showposts' => 3 ) ); ?>
-        <!-- Start the Loop -->
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?><?php while ( $the_query->have_posts() ) { $the_query->the_post(); } ?>
+
+          <?php $posts=get_posts('numberposts=2&offset=2'); foreach ($posts as $post) : ?>
+
+
         <div id="border-bottom" class="clearfix">
         <h3><?php the_title(); ?></h3>
         <!--text-right-->
@@ -29,45 +29,15 @@
         <!--/text-right-->
         <?php the_excerpt() ?>
         </div><!--/border-bottom-->
-        <?php wp_reset_postdata(); ?>
+
+<?php endforeach; ?>
+
       </div><!-- /.span3-->
 
       <div class="span4">
-        <!-- The Query First 3 -->
-        <?php $the_query = new WP_Query( array( 'offset' => 3 ) ); ?>
-        <!-- Start the Loop -->
-        <?php while ( $the_query->have_posts() ) { $the_query->the_post(); } ?>
-        <div id="border-bottom" class="clearfix">
-        <h3><?php the_title(); ?></h3>
-        <!--text-right-->
-        <p class="text-right"><small><em>
-          By: <?php the_author_posts_link() ?><br>
-          Column: <?php $category = get_the_category(); if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>'; } ?><br>
-          <?php the_time('F jS, Y') ?>
-        </em></small></p>
-        <!--/text-right-->
-        <?php the_excerpt() ?>
-        </div><!--/border-bottom-->
-        <?php wp_reset_postdata(); ?>
       </div><!-- /.span3-->
 
       <div class="span4">
-        <!-- The Query First 3 -->
-        <?php $the_query = new WP_Query( array( 'offset' => 6 ) ); ?>
-        <!-- Start the Loop -->
-        <?php while ( $the_query->have_posts() ) { $the_query->the_post(); } ?>
-        <div id="border-bottom" class="clearfix">
-        <h3><?php the_title(); ?></h3>
-        <!--text-right-->
-        <p class="text-right"><small><em>
-          By: <?php the_author_posts_link() ?><br>
-          Column: <?php $category = get_the_category(); if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>'; } ?><br>
-          <?php the_time('F jS, Y') ?>
-        </em></small></p>
-        <!--/text-right-->
-        <?php the_excerpt() ?>
-        </div><!--/border-bottom-->
-        <?php wp_reset_postdata(); ?>
       </div><!-- /.span3-->
 
     </div><!--/row-fluid-->
