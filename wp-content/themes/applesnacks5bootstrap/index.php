@@ -16,7 +16,7 @@
           <?php the_time('F jS, Y') ?>
         </em></small></p>
         <!--/text-right-->
-        <div id="border-bottom">
+        <div id="border-bottom" class="clearfix">
           <?php the_excerpt() ?>
         </div><!--/border-bottom-->
         <?php endwhile; else: ?>
