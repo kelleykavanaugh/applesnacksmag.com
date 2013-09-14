@@ -42,21 +42,14 @@ footer {
 
 /* Contributors Page */
 #authorlist li {
-	width: 800px;
-	margin: 20px 0px 0px 50px;
-	padding: 0 0 20px 0;
+	border-bottom: 1px solid;
 	list-style: none;
-	font-size: 14px;
-	border-bottom: 1px dashed;
-	line-height: 1.5em;
-	text-decoration: none;
 }
 #authorlist img.photo {
-	width: 100px;
-	height: 100px;
+	width: 150px;
+	height: 150px;
 	float: left;
-	padding: 0 20px 10px 0;
-	text-decoration: none;
+	padding: 20px 20px 10px 0;
 }
 .authorlist {
 	font: bold 20px Georgia, "Times New Roman", Times, serif;
