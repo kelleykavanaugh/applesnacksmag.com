@@ -14,10 +14,10 @@
         foreach ($categories as $cat) {
           if ($cat->category_parent != 0) {
           }
-          echo '<a href="'.get_option('home').'/'.'category'.'/'.$cat->category_nicename.'/">'.$cat->cat_name.'</a>';
+          echo '<h3><a href="'.get_option('home').'/'.'category'.'/'.$cat->category_nicename.'/">'.$cat->cat_name.'</a>';
           if ($cat->category_description != '') {
-            echo ' <br> '.$cat->category_description;
-            echo ' <br> ';
+            echo ' : <em>'.$cat->category_description;
+            echo ' </em><br></h3> ';
           }
           echo '<br />';
         }
