@@ -39,3 +39,36 @@ footer {
 	margin: 0 0 0 0;
 }
 /* END MAIN INDEX POSTS */
+
+/* Contributors Page */
+#authorlist li {
+	width: 800px;
+	margin: 20px 0px 0px 50px;
+	padding: 0 0 20px 0;
+	list-style: none;
+	font-size: 14px;
+	border-bottom: 1px dashed;
+	line-height: 1.5em;
+	text-decoration: none;
+}
+#authorlist img.photo {
+	width: 100px;
+	height: 100px;
+	float: left;
+	padding: 0 20px 10px 0;
+	text-decoration: none;
+}
+.authorlist {
+	font: bold 20px Georgia, "Times New Roman", Times, serif;
+	text-align: center;
+	text-transform: uppercase;
+	padding: 5px 0px 5px;
+	text-decoration: none;
+}
+.authorlist a {
+	text-decoration: none;
+}
+.authorlist a:hover {
+	color:#c51300;
+}
+/* End Contributors Page */
