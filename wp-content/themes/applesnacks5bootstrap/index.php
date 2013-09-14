@@ -3,7 +3,7 @@
       <div class="span2">
       </div><!--/span2-->
       <div class="span8">
-        <div id="border-bottom">
+        <div id="border-bottom" class="clearfix">
           <h1><?php the_title(); ?></h1>
         </div><!--/border-bottom-->
         <!-- Start the Loop -->
