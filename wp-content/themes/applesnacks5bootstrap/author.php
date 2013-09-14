@@ -8,13 +8,15 @@
         <div id="border-bottom">
           <h1><?php echo $curauth->first_name; ?> <?php echo $curauth->last_name; ?></h1>
         </div><!--/border-bottom-->
-        <div class="pull-left">
+        <div class="pull-left" style="padding: 20px 20px 0 0;">
           <?php userphoto($wp_query->get_queried_object()) ?>
         </div><!--/pull-left-->
-        <strong>Bio:</strong> <?php echo $curauth->user_description; ?><br>
-        <strong>Facebook:</strong> <a href="http://facebook.com/<?php echo $curauth->facebook; ?>" target="_blank"><?php echo $curauth->facebook; ?></a><br>
-        <strong>Twitter:</strong> <a href="http://twitter.com/<?php echo $curauth->twitter; ?>" target="_blank"><?php echo $curauth->twitter; ?></a><br>
-        <strong>Email:</strong> <a href="mailto:<?php echo $curauth->user_email; ?>"><?php echo $curauth->user_email; ?></a><br>
+        <p style="padding: 20px 0 0 0;">
+          <strong>Bio:</strong> <?php echo $curauth->user_description; ?><br>
+          <strong>Facebook:</strong> <a href="http://facebook.com/<?php echo $curauth->facebook; ?>" target="_blank"><?php echo $curauth->facebook; ?></a><br>
+          <strong>Twitter:</strong> <a href="http://twitter.com/<?php echo $curauth->twitter; ?>" target="_blank"><?php echo $curauth->twitter; ?></a><br>
+          <strong>Email:</strong> <a href="mailto:<?php echo $curauth->user_email; ?>"><?php echo $curauth->user_email; ?></a><br>
+        </p>
       </div><!--/span8-->
       <div class="span2">
       </div><!--/span2-->
