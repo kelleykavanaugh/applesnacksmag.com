@@ -5,6 +5,7 @@
       <div class="span8">
         <div id="border-bottom">
           <h1><?php single_cat_title(); ?></h1>
+          <small><center><em><?php echo category_description( $category_id ); ?> </em></center></small>
         </div><!--/border-bottom-->
         <!-- Start the Loop -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
