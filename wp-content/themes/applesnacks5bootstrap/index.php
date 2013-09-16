@@ -11,19 +11,12 @@
       </div><!--/.span1 -->
     </div><!--/row-fluid-->
     <div class="row-fluid">
+<!-- COLUMN 1 -->
       <div class="span4">
-
-<?php 
-// the query
-$the_query = new WP_Query( array( 'posts_per_page' => 3, 'offset' => 0 ) ); ?>
-
-<?php if ( $the_query->have_posts() ) : ?>
-
-  <!-- pagination here -->
-
-  <!-- the loop -->
-  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
-
+      <!-- Start the Loop -->
+      <?php $the_query = new WP_Query( array( 'posts_per_page' => 3, 'offset' => 0 ) ); ?>
+      <?php if ( $the_query->have_posts() ) : ?>
+      <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
         <div id="border-bottom" class="clearfix">
         <h3><?php the_title(); ?></h3>
         <!--text-right-->
@@ -35,24 +28,20 @@ $the_query = new WP_Query( array( 'posts_per_page' => 3, 'offset' => 0 ) ); ?>
         <!--/text-right-->
         <?php the_excerpt() ?>
         </div><!--/border-bottom-->
-    
-  <?php endwhile; ?>
-  <!-- end of the loop -->
-
-  <!-- pagination here -->
-
-  <?php wp_reset_postdata(); ?>
-
-<?php else:  ?>
-  <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
-<?php endif; ?>
-
-<!-- End The Loop -->
+      <!-- End The Loop -->
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(); ?>
+      <?php else: ?>
+      <p>Sorry, no posts matched your criteria.</p>
+      <?php endif; ?>
       </div><!-- /.span4-->
-
+<!--END COLUMN 1 -->
+<!-- COLUMN 2 -->
       <div class="span4">
-        <!-- start the loop -->
-        <?php $posts=get_posts('numberposts=3&offset=3'); foreach ($posts as $post) : ?>
+      <!-- Start the Loop -->
+      <?php $the_query = new WP_Query( array( 'posts_per_page' => 3, 'offset' => 3 ) ); ?>
+      <?php if ( $the_query->have_posts() ) : ?>
+      <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
         <div id="border-bottom" class="clearfix">
         <h3><?php the_title(); ?></h3>
         <!--text-right-->
@@ -64,13 +53,20 @@ $the_query = new WP_Query( array( 'posts_per_page' => 3, 'offset' => 0 ) ); ?>
         <!--/text-right-->
         <?php the_excerpt() ?>
         </div><!--/border-bottom-->
-        <?php endforeach; ?>
-        <!-- End The Loop -->
+      <!-- End The Loop -->
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(); ?>
+      <?php else: ?>
+      <p>Sorry, no posts matched your criteria.</p>
+      <?php endif; ?>
       </div><!-- /.span4-->
-
+<!--END COLUMN 2 -->
+<!-- COLUMN 3 -->
       <div class="span4">
-        <!-- start the loop -->
-        <?php $posts=get_posts('numberposts=3&offset=6'); foreach ($posts as $post) : ?>
+      <!-- Start the Loop -->
+      <?php $the_query = new WP_Query( array( 'posts_per_page' => 3, 'offset' =>6 ) ); ?>
+      <?php if ( $the_query->have_posts() ) : ?>
+      <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
         <div id="border-bottom" class="clearfix">
         <h3><?php the_title(); ?></h3>
         <!--text-right-->
@@ -82,18 +78,13 @@ $the_query = new WP_Query( array( 'posts_per_page' => 3, 'offset' => 0 ) ); ?>
         <!--/text-right-->
         <?php the_excerpt() ?>
         </div><!--/border-bottom-->
-        <?php endforeach; ?>
-        <!-- End The Loop -->
+      <!-- End The Loop -->
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(); ?>
+      <?php else: ?>
+      <p>Sorry, no posts matched your criteria.</p>
+      <?php endif; ?>
       </div><!-- /.span4-->
-
-    </div><!--/row-fluid-->
-
-    <div class="row-fluid">
-      <div class="span12">
-        <!-- newer-older links -->
-        <div class="pull-left" style="clearfix"><small><em><?php previous_posts_link('&raquo; Newer Snacks') ?></em></small></div>
-        <div class="pull-right"><small><em><?php next_posts_link('Older Snacks &laquo;') ?></small></em></div>
-        <!--/newer-older links -->
-      </div><!--/span12-->
+<!--END COLUMN 3 -->
     </div><!--/row-fluid-->
     <?php get_footer(); ?>
