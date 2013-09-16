@@ -30,7 +30,7 @@
         </div><!--/border-bottom-->
         <!-- Start the Loop -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <h3><?php the_title(); ?></h3>
+        <h3><a href="<?php the_permalink() ?>" rel="bookmark" title="Read <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
         <!--text-right-->
         <p class="text-right"><small><em>
           By: <?php the_author_posts_link() ?><br>
