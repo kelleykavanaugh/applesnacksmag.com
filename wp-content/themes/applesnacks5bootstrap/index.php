@@ -4,7 +4,7 @@
       </div><!--/span1-->
       <div class="span10">
         <div id="border-bottom" class="clearfix">
-          <h1><?php the_title(); ?></h1>
+          <h1>Friday, <?php echo get_the_date(); ?></h1>
         </div><!--/border-bottom-->
       </div><!--/span9-->
       <div id="span1">
@@ -12,8 +12,18 @@
     </div><!--/row-fluid-->
     <div class="row-fluid">
       <div class="span4">
-        <!-- start the loop -->
-        <?php $posts=get_posts('numberposts=3&offset=0'); foreach ($posts as $post) : ?>
+
+<?php 
+// the query
+$the_query = new WP_Query( array( 'posts_per_page' => 3, 'offset' => 0 ) ); ?>
+
+<?php if ( $the_query->have_posts() ) : ?>
+
+  <!-- pagination here -->
+
+  <!-- the loop -->
+  <?php while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
         <div id="border-bottom" class="clearfix">
         <h3><?php the_title(); ?></h3>
         <!--text-right-->
@@ -25,8 +35,19 @@
         <!--/text-right-->
         <?php the_excerpt() ?>
         </div><!--/border-bottom-->
-        <?php endforeach; ?>
-        <!-- End The Loop -->
+    
+  <?php endwhile; ?>
+  <!-- end of the loop -->
+
+  <!-- pagination here -->
+
+  <?php wp_reset_postdata(); ?>
+
+<?php else:  ?>
+  <p><?php _e( 'Sorry, no posts matched your criteria.' ); ?></p>
+<?php endif; ?>
+
+<!-- End The Loop -->
       </div><!-- /.span4-->
 
       <div class="span4">
