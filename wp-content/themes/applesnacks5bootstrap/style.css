@@ -85,11 +85,17 @@ a:focus {
 .navbar .brand:focus {
   color: #c51300;
 }
+footer {
+	background: #fff url(images/footer.gif) no-repeat top left;
+	min-height: 60px;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+}
 
 @media (max-width: 979px) {
   body {
     padding-top: 0;
-  }
+	}
   .navbar-fixed-top {
     margin-bottom: 0px;
 	background: url(images/logo-tiny.jpg) no-repeat;
@@ -97,7 +103,14 @@ a:focus {
 	padding-left: 51px;
 	height: 51px;
 	padding-top: 0px;  
-  }
+	}
+  footer {
+	background: #fff url(images/footer.gif) no-repeat top left;
+	min-height: 60px;
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	}
+}
 /* End Navbar Styles */
 
 /* Main Index Posts */
@@ -150,11 +163,3 @@ a:focus {
 	color:#c51300;
 }
 /* End Contributors Page */
-/* FOOTER */
-footer {
-	background: #fff url(images/footer.gif) no-repeat top left;
-	min-height: 60px;
-	padding: 0 0 0 0px;
-	margin: 0 0 0 0;
-}
-/* End Footer */
