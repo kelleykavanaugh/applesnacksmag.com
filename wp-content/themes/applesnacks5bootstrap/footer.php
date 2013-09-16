@@ -1,8 +1,7 @@
-        <hr><!--Style Break-->
         <footer>
-            <p class="text-right"><em>Website by <strong><a href="http://www.kelleykavanaugh.com">Kelley Kavanaugh </a></strong></em>
-            // <em>Logo by <strong><a href="http://www.facebook.com/connorpascal">Connor Pascal</a></strong></em>
-            // &copy; 2013 <strong><?php bloginfo('name'); ?></strong>
+            <p class="text-left"><em>Website by <strong><a href="http://www.kelleykavanaugh.com">Kelley Kavanaugh </a></strong></em><br>
+            <em>Logo by <strong><a href="http://www.facebook.com/connorpascal">Connor Pascal</a></strong></em><br>
+            &copy; 2013 <strong><?php bloginfo('name'); ?></strong>
             </p>
         </footer>
         <?php wp_footer(); ?>
