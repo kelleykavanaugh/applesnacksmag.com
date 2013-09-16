@@ -62,12 +62,23 @@ a {
 a:hover,
 a:focus {
   color: #c51300;
-  text-decoration: underline;
+  text-decoration: none;
 }
 #border-bottom {
 	border-bottom: 1px solid #000;
 }
 /* End Universal Styles */
+
+/* Navbar Styles */
+.navbar .brand {
+  color: #FFF;
+  text-shadow: none;
+}
+.navbar .brand:hover,
+.navbar .brand:focus {
+  color: #c51300;
+}
+/* End Navbar Styles */
 
 /* Main Index Posts */
 #category {
