@@ -12,10 +12,7 @@ This simple theme was built by modifying the example Bootstrap theme "Basic Mark
 
 @import url('bootstrap/css/bootstrap.css'); 
 @import url('bootstrap/css/bootstrap-responsive.css'); 
-body {
-	padding-top: 20px; 
-	padding-bottom: 0px; 
-}
+
 /* wordpress image styles */
 img.alignright {float:right; margin:0 0 1em 1em}
 img.alignleft {float:left; margin:0 1em 1em 0}
@@ -25,13 +22,76 @@ a img.alignleft {float:left; margin:0 1em 1em 0}
 a img.aligncenter {display: block; margin-left: auto; margin-right: auto}
 /* End wordpress image styles */
 
-/* Main Index Posts */
-h1, h2, h3 {
+/* Universal Styles */
+h1, h2, h3, h4, h5, h6 {
 	text-transform: uppercase;
 	text-align: center;
+	color: #000;
+	line-height: 1em;
+	font-style: bold;
+}
+h1 {
+	font-size: 35px;
+}
+h2 {
+	font-size: 25px;
+}
+h3 {
+	font-size: 20px;
+}
+h4 {
+	font-size: 15px;
+}
+h5, h6 {
+	font-size: 12px;
+}
+small {
+	padding: 0 0 0 0;
+	margin: 0 0 0 0;
+	line-height: 5px;
+}
+body {
+	padding-top: 20px; 
+	padding-bottom: 0px; 
+	font-family: Georgia, "Times New Roman", Times, serif;
+	color: #5c5c5c;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #c51300;
+  text-decoration: underline;
 }
 #border-bottom {
 	border-bottom: 1px solid #000;
+}
+/* End Universal Styles */
+
+/* Main Index Posts */
+#category {
+	background-color: #000;
+	display: block;
+	text-transform: uppercase;
+	color: #FFF;
+	font: italic 10px Georgia, "Times New Roman", Times, serif;
+	padding: 10px 10px 10px 10px;
+}
+#category a {
+	color: #FFF;
+	text-decoration: none;
+}
+#category a:hover {
+	color: #c51300;
+	text-decoration: none;
+}
+#box-in {
+	border: 1px solid #000;
+	padding: 0px 10px 20px 10px;
+	margin-bottom: 20px;
 }
 footer {
 	background: #fff url(images/footer.gif) no-repeat top left;
