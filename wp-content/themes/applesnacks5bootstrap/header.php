@@ -17,7 +17,6 @@
     <?php wp_head(); ?>
   </head>
   <body>
-
   <div class="navbar navbar-inverse navbar-fixed-top">
     <div class="navbar-inner">
       <div class="container">
@@ -29,13 +28,10 @@
         <a class="brand" href="<?php echo site_url(); ?>"><?php bloginfo('name'); ?></a>
         <div class="nav-collapse collapse">
           <ul class="nav">
-
               <?php wp_list_pages(array('title_li' => '', 'exclude' => 4)); ?>
-
           </ul>
         </div><!--/.nav-collapse -->
       </div><!--/container-->
     </div><!--/navbar-inner-->
   </div><!--/navbar navbar-inverse navbar-fixed-top"-->
-
   <div class="container">
