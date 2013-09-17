@@ -160,5 +160,8 @@ footer {
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
+		.navbar-inverse .navbar-inner {
+		padding-left: 40px;
+	}
 }
 /* End Responsive */
