@@ -49,8 +49,7 @@ strong {
 	color: #000;
 }
 body {
-	padding-top: 44px;
-	padding-bottom: 0px;
+	padding: 44px 20px 0px 20px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	color: #5c5c5c;
 }
@@ -93,7 +92,7 @@ footer {
 
 @media (max-width: 979px) {
   body {
-    padding-top: 0;
+    padding: 0 0 0 0;
 	}
   .navbar-fixed-top {
     margin-bottom: 0px;
