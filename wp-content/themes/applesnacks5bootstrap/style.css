@@ -65,11 +65,9 @@ a:focus {
 	padding: 51px 0px 0px 0px;
 }
 .navbar-inverse .navbar-inner {
+	background: url(images/logo-tiny.jpg) no-repeat top left;
 	background-color: #000;
 	padding: 5px 5px 5px 51px;
-}
-.navbar {
-	background: url(images/logo-tiny.gif) no-repeat top left;
 }
 #border-bottom {
 	border-bottom: 1px solid #000;
