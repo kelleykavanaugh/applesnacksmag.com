@@ -1,12 +1,8 @@
     <?php get_header(); ?>
     <div class="row-fluid">
-      <div class="span1">
-      </div><!--/span1-->
-      <div class="span10">
+      <div class="span12">
           <h1>Friday, <?php echo get_the_date(); ?></h1>
-      </div><!--/span10-->
-      <div id="span1">
-      </div><!--/.span1 -->
+      </div><!--/span12-->
     </div><!--/row-fluid-->
     <div class="row-fluid">
 <!-- COLUMN 1 -->

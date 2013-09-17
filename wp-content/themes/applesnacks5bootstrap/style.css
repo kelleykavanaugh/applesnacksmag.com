@@ -49,7 +49,6 @@ strong {
 	color: #000;
 }
 body {
-	padding: 44px 20px 0px 20px;
 	font-family: Georgia, "Times New Roman", Times, serif;
 	color: #5c5c5c;
 }
@@ -62,22 +61,24 @@ a:focus {
   color: #c51300;
   text-decoration: none;
 }
+.container {
+	padding: 51px 0px 0px 0px;
+}
+.navbar-inverse .navbar-inner {
+	padding: 5px 5px 5px 51px;
+}
+.navbar {
+	background: url(images/logo-tiny.gif) no-repeat top left;
+}
 #border-bottom {
 	border-bottom: 1px solid #000;
 }
 /* End Universal Styles */
 
 /* Navbar Styles */
-.navbar {
-	background: url(images/logo-tiny.jpg) no-repeat;
-	background-color: #000;
-	padding-left: 51px;
-	height: 46px;
-	padding-top: 5px;
-}
 .navbar .brand {
-  color: #FFF;
-  text-shadow: none;
+	color: #FFF;
+	text-shadow: none;
 }
 .navbar .brand:hover,
 .navbar .brand:focus {
@@ -89,42 +90,7 @@ footer {
 	padding: 0 0 0 0;
 	margin: 0 0 0 0;
 }
-
-@media (max-width: 979px) {
-  body {
-    padding: 0 0 0 0;
-	}
-  .navbar-fixed-top {
-    margin-bottom: 0px;
-	background: url(images/logo-tiny.jpg) no-repeat;
-	background-color: #666;
-	padding-left: 51px;
-	height: 51px;
-	padding-top: 0px;  
-	}
-  footer {
-	background: #fff url(images/footer.gif) no-repeat top left;
-	min-height: 60px;
-	padding: 0 0 0 0;
-	margin: 0 0 0 0;
-	}
-}
 /* End Navbar Styles */
-
-/* Wrapper for page content to push down footer */
-      #wrap {
-        min-height: 100%;
-        height: auto !important;
-        height: 100%;
-        /* Negative indent footer by it's height */
-        margin: 0 auto -60px;
-      }
-
-      /* Set the fixed height of the footer here */
-      #push,
-      #footer {
-        height: 60px;
-      }
 
 /* Main Index Posts */
 #category {
@@ -176,3 +142,26 @@ footer {
 	color:#c51300;
 }
 /* End Contributors Page */
+/* For Responsive Things */
+/* Large desktop */
+@media (min-width: 1200px) {
+}
+/* Portrait tablet to landscape and desktop */
+@media (max-width: 979px) {
+	.navbar-fixed-top {
+		margin-bottom: 0px;
+	}
+	.container {
+	padding: 0px 0px 0px 0px;
+}
+}
+}
+@media (min-width: 768px) {
+}
+/* Landscape phone to portrait tablet */
+@media (max-width: 767px) {
+}
+/* Landscape phones and down */
+@media (max-width: 480px) {
+}
+/* End Responsive */
