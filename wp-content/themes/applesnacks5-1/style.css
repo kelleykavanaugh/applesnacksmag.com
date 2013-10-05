@@ -144,6 +144,9 @@ footer {
 /* For Responsive Things */
 /* Large desktop */
 @media (min-width: 1200px) {
+	#box-in {
+		height: 350px;
+	}
 }
 /* Portrait tablet to landscape and desktop */
 @media (max-width: 979px) {
@@ -153,11 +156,20 @@ footer {
 	.container {
 		padding: 0px 0px 0px 0px;
 	}
+	#box-in {
+		height: 375px;
+	}
 }
 @media (min-width: 768px) {
+	#box-in {
+		height: 350px;
+	}
 }
 /* Landscape phone to portrait tablet */
 @media (max-width: 767px) {
+		#box-in {
+		height: auto;
+	}
 }
 /* Landscape phones and down */
 @media (max-width: 480px) {
