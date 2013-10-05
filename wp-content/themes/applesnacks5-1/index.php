@@ -31,4 +31,9 @@
 
 <!--END COLUMN 1 -->
     </div><!--/row-fluid-->
+      <div class="navigation">
+      <?php previous_posts_link( 'Newer Issue' ); ?>//
+      <?php next_posts_link( 'Older Issue' , $max_pages ); ?>
+    </div><!-- End Navigation-->
+
     <?php get_footer(); ?>

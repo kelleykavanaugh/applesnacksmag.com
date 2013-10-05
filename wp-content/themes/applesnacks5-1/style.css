@@ -93,6 +93,15 @@ footer {
 }
 /* End Navbar Styles */
 
+/* Navigation */
+.navigation {
+	font: normal 16px Georgia, "Times New Roman", Times, serif;
+	clear:both;
+	text-align: center;
+	padding: 25px 10px 25px 10px;
+}
+/* End Navigation */
+
 /* Main Index Posts */
 #category {
 	background-color: #000;
