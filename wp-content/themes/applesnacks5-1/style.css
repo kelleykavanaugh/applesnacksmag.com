@@ -175,7 +175,7 @@ footer {
 }
 @media (min-width: 768px) {
 	#box-in {
-		height: 450px;
+		height: 400px;
 	}
 	.container {
 		width:100%;
