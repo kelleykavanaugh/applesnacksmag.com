@@ -1,7 +1,7 @@
     <?php get_header(); ?>
     <div class="row-fluid">
       <div class="span12">
-          <h1>Friday, <?php echo get_the_date(); ?></h1>
+          <h1><?php the_time('l, F jS, Y') ?></h1>
       </div><!--/span12-->
     </div><!--/row-fluid-->
     <div class="row-fluid">
