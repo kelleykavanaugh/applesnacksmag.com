@@ -25,28 +25,40 @@
       <div class="span2">
       </div><!--/span2-->
       <div class="span8">
-        <div id="border-bottom">
           <h1><?php echo $curauth->first_name; ?>'s Articles</h1>
-        </div><!--/border-bottom-->
-        <!-- Start the Loop -->
-        <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
-        <h3><a href="<?php the_permalink() ?>" rel="bookmark" title="Read <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
-        <!--text-right-->
-        <p class="text-right"><small><em>
-          By: <?php the_author_posts_link() ?><br>
-          Column: <?php $category = get_the_category(); if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>'; } ?><br>
-          <?php the_time('F jS, Y') ?>
-        </em></small></p>
-        <!--/text-right-->
-        <div id="border-bottom" class="clearfix">
-          <?php the_excerpt() ?>
-        </div><!--/border-bottom-->
-        <?php endwhile; else: ?>
-        <p>Sorry, no posts matched your criteria.</p>
-        <?php endif; ?>
-        <!-- End The Loop -->
       </div><!-- /.span8-->
       <div id="span2">
       </div><!--/.span2 -->
     </div><!-- /.row-fluid -->
+
+    <div class="row-fluid">
+      <!-- Start the Loop -->
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <div class="span4">
+        <div id="box-in" class="clearfix"><!--box in-->
+        <div id="category">
+          <em><?php $category = get_the_category(); if($category[0]){echo '<a href="'.get_category_link($category[0]->term_id ).'">'.$category[0]->cat_name.'</a>'; } ?></em>
+        </div><!-- End Category-->
+        <h3><a href="<?php the_permalink() ?>" rel="bookmark" title="Read <?php the_title_attribute(); ?>"><?php the_title(); ?></a></h3>
+        <!--text-right-->
+        <p class="text-right"><small><em>
+          By: <?php the_author_posts_link() ?><br>
+        </em></small></p>
+        <!--/text-right-->
+        <?php the_excerpt() ?>
+        </div><!--/box-in-->
+      </div><!-- /.span4-->
+      <!-- End The Loop -->
+      <?php endwhile; ?>
+      <?php wp_reset_postdata(); ?>
+      <?php else: ?>
+      <p>Sorry, no posts matched your criteria.</p>
+      <?php endif; ?>
+    </div><!--/row-fluid-->
+
+      <div class="navigation">
+      <?php previous_posts_link( 'Newer Articles' ); ?>//
+      <?php next_posts_link( 'Older Articles' , $max_pages ); ?>
+    </div><!-- End Navigation-->
+
     <?php get_footer(); ?>

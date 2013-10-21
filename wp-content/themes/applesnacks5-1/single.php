@@ -1,8 +1,8 @@
     <?php get_header(); ?>
     <div class="row-fluid">
-      <div class="span2">
-      </div><!--/span2-->
-      <div class="span8">
+      <div class="span4">
+      </div><!--/span4-->
+      <div class="span4">
         <!-- Start the Loop -->
         <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
         <div id="border-bottom">
@@ -22,8 +22,8 @@
         <p>Sorry, no posts matched your criteria.</p>
         <?php endif; ?>
         <!-- End The Loop -->
-      </div><!-- /.span8-->
-      <div id="span2">
-      </div><!--/.span2 -->
+      </div><!-- /.span4-->
+      <div id="span4">
+      </div><!--/.span4 -->
     </div><!-- /.row-fluid -->
     <?php get_footer(); ?>
