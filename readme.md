@@ -18,9 +18,9 @@ Some "features" of this theme (current version):
 
 ~ "Columns" Page Template displays a list of categories used on your site
 
-~ "Contributors" Page Template displays a list of authors registered on your site
-	~ Uses the plugin User Photo: http://wordpress.org/plugins/user-photo/
-	~ Has custom fields added to Users for Facebook & Twitter
+~ "Contributors" Page Template displays a list of authors registered on your site (Uses the plugin User Photo: http://wordpress.org/plugins/user-photo/)
+
+~ "Contributors" Page has custom fields added to Users for Facebook & Twitter
 
 Please let me know if you use my Wordpress theme, or if you need help with anything on it!
 
