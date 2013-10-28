@@ -12,11 +12,7 @@ If you do, please:
 
 Some "features" of this theme (current version):
 
-~ 3 column posts display on homepage, author pages, category pages
-
-	~ This feature works because of a fixed height which means your posts cannot be longer than a set number of characters. This is acheived on Apple Snacks with the help of the Advanced Excerpt plugin: http://wordpress.org/plugins/advanced-excerpt/
-
-	~ Apple Snacks is limited to 9 posts per page, a setting in your Wordpress Admin area.
+~ 3 column posts display on homepage, author pages, category pages (This feature works because of a fixed height which means your posts cannot be longer than a set number of characters. This is acheived on Apple Snacks with the help of the Advanced Excerpt plugin: http://wordpress.org/plugins/advanced-excerpt/)
 
 ~ Black backgrounded "tabs" on every post displaying that posts Category
 
