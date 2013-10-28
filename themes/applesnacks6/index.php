@@ -7,6 +7,7 @@
     <div class="row-fluid">
 <!-- COLUMN 1 -->
       <!-- Start the Loop -->
+      <?php query_posts($query_string . '&cat=-29'); ?>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <div class="span4">
         <div id="box-in" class="clearfix"><!--box in-->
